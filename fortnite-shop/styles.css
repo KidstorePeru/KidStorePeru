@@ -1,0 +1,754 @@
+@font-face {
+    font-family: 'Burbank';
+    src: url('assets/fonts/BurbankBigRegular-Black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Burbank';
+    src: url('assets/fonts/BurbankBigRegular-Black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FNSans';
+    src: url('assets/fonts/FN_Sans_Serif.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Aplicar la fuente a todos los elementos */
+body, h1, h2, h3, p, span {
+    font-family: 'Burbank', Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+
+body {
+    background-color: #2F3135;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, .5) !important;
+}
+
+.creator-code {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffd700;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, .5) !important;
+}
+
+/* Título principal */
+.main-title {
+    margin: 20px 0;
+    font-size: 48px;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, .5) !important;
+}
+
+/* Lista de Amigos */
+.friends-section {
+    margin: 10px auto;
+}
+
+.friends-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #066DBC;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, .5) !important;
+}
+
+.friends-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.friend {
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: color 0.3s;
+    font-size: 18px;
+    color: #066DBC;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, .5) !important;
+}
+
+.friend:hover {
+    color: #ffd700;
+}
+
+
+/* Estilos para las categorías */
+.category-title {
+    text-align: center;
+    font-size: 42px;
+    margin: 20px 0;
+}
+
+/* Contenedor de la tienda */
+.shop-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* 🔥 Centra los productos */
+    gap: 20px; /* 🔥 Espaciado uniforme entre productos */
+    max-width: 90%;
+    margin: 0 auto; /* 🔥 Centra todo en la página */
+    padding: 20px;
+}
+
+
+/* Estilos de cada producto */
+.item {
+    width: 220px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    box-shadow: inset 0 0 150px -50px black;
+    overflow: visible;
+    margin-bottom: 130px; /* 🔥 Ajusta la separación entre filas */
+}
+
+/* Nombre del producto */
+.item h3 {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Imagen del producto */
+.item img:not(.buy-icon) {
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    width: 200px; /* 🔥 Solo aplicará a las imágenes de los productos */
+}
+
+
+/* Precio en pavos */
+.price-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 18px;
+    white-space: nowrap;
+    width: auto;
+    margin-top: -2px; /* Asegura que no esté pegado a otros elementos */
+}
+
+/* Ícono de pavos */
+.pavos-icon {
+    width: 18px !important;
+    height: 18px !important;
+    object-fit: contain;
+    flex-shrink: 0; /* Evita que el ícono se mueva */
+    position: relative; /* Asegura que el ícono respete el flujo */
+}
+
+/* Precio en soles */
+.price-soles {
+    font-size: 20px;
+    margin-top: 1px;
+}
+
+/* Contenedor de los íconos de compra en la esquina superior izquierda */
+.buy-icons {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 10; /* Asegura que los íconos estén por encima de todo */
+}
+
+/* Estilo de los íconos */
+.buy-icon { 
+    width: 30px !important;
+    height: 30px !important;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.buy-icon:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
+}
+
+
+.buy-buttons button:hover {
+    background-color: #ffd700;
+    color: black;
+}
+
+/* Capa superpuesta para la información */
+.overlay {
+    position: absolute;
+    bottom: -95px;
+    width: 100%;
+    background: rgb(0 0 0); /* Fondo con opacidad */
+    color: white;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido */
+    justify-content: space-evenly;
+    height: 100px; /* Ajusta la altura total */
+}
+
+/* Nombre del producto */
+.overlay h3 {
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Contenedor del tiempo del producto (debajo del recuadro) */
+.item-time {
+    position: absolute;
+    bottom: -34px; /* Lo coloca debajo del recuadro */
+    left: 0;
+    width: 100%;
+    background-color: #212225;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 0 0 4px 4px; /* Ajusta bordes inferiores */
+    margin-bottom: 2px; /* Añade espacio extra debajo del horario */
+    z-index: 5; /* Asegura que esté por encima de otros elementos */
+    text-shadow: 0 3px 3px rgba(0, 0, 0, .5) !important;
+}
+
+/* Aplicar la fuente personalizada + FN Sans Serif en títulos y precios */
+.category-title, .overlay h3, .price-container, .price-soles {
+    font-family: 'Burbank', 'FNSans', Arial, sans-serif; /* Combinación de fuentes */
+    text-transform: uppercase; /* Convierte todo en mayúsculas */
+    text-shadow: 0 3px 3px rgba(0, 0, 0, .5) !important;
+}
+
+.section {
+    display: active; /* Oculta todas las secciones */
+}
+
+.section.active {
+    display: grid; /* Muestra solo la sección activa */
+}
+
+/* Contenedor de los botones de categoría */
+.categories {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 20px; /* Espaciado entre botones */
+    margin: 20px 0;
+}
+
+/* Estilos de los botones de categoría */
+.category-btn {
+    font-size: 26px; /* Texto más grande */
+    font-weight: bold;
+    padding: 14px 24px; /* Espaciado interno más amplio */
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: 'Burbank', Arial, sans-serif; /* Aplicar la fuente */
+    background-color: #2a2a2a; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    border: 2px solid transparent; /* Borde invisible */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, .5) !important;
+}
+
+/* Efecto al pasar el mouse */
+.category-btn:hover {
+    background-color: yellow; /* Cambio a amarillo */
+    color: black; /* Texto negro */
+    border: 2px solid white; /* Borde blanco */
+    transform: scale(1.1); /* Aumenta ligeramente */
+}
+
+/* Estilos para la categoría activa */
+.category-btn.active {
+    background-color: #ff8000; /* Naranja para la sección activa */
+    color: white;
+    transform: scale(1.15);
+}
+
+/* Contenedor de la sección Pavos */
+.pavos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: -100px;
+}
+
+/* Cada producto de Pavos */
+.pavos-item {
+    position: relative;
+    width: 320px;
+    height: 300px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: inset 0 0 150px -50px black;
+}
+
+/* Imágenes de Pavos */
+.pavos-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-image: linear-gradient(to bottom, #E2b500, #b73c0b, #97082f);
+    box-shadow: inset 0 0 150px -50px black;
+}
+
+/* Capa oscura en la parte inferior */
+.pavos-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Nombre del producto con icono */
+.pavos-title {
+    font-family: 'Burbank', Arial, sans-serif;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.pavos-title h3 {
+    font-size: 22px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, .5) !important
+}
+
+/* Ícono de pavos */
+.pavos-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Precio en soles */
+.pavos-price {
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+    margin-top: -15px;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, .5) !important
+}
+
+/* Íconos de compra (WhatsApp, Facebook, Instagram, Discord) */
+.buy-icons {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Tamaño de los iconos */
+.pavos-buy-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease;
+}
+
+.pavos-buy-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Contenedor de la sección PACKS */
+.packs-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: -55px;
+}
+
+/* Cada producto de PACKS */
+.packs-item {
+    position: relative;
+    width: 320px;
+    height: 300px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: inset 0 0 150px -50px black;
+}
+
+/* Imágenes de PACKS */
+.packs-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-image: linear-gradient(to bottom, #D3C9E3, #6876AC);
+    box-shadow: inset 0 0 150px -50px black;
+}
+
+/* Capa oscura en la parte inferior */
+.packs-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Nombre del producto */
+.packs-overlay h3 {
+    font-size: 22px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, .5) !important
+}
+
+/* Precio */
+.packs-price {
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, .5) !important
+}
+
+/* Íconos de compra (WhatsApp, Facebook, Instagram, Discord) */
+.buy-icons {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Tamaño de los iconos */
+.packs-buy-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease;
+}
+
+.packs-buy-icon:hover {
+    transform: scale(1.2);
+}
+
+.packs-title {
+    font-family: 'Burbank', Arial, sans-serif;
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    margin-bottom: 69px;
+    text-transform: uppercase;
+    margin-top: -10px;
+}
+
+.pavos-section-title {
+    font-family: 'Burbank', Arial, sans-serif;
+    font-size: 48px;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 79px;
+    margin-top: -30px;
+}
+
+/* Oculta todas las secciones por defecto */
+.shop-section {
+    display: none;
+}
+
+/* Muestra solo las secciones activas */
+.shop-section.active {
+    display: block;
+}
+
+/* 🔍 Contenedor del buscador */
+.search-container {
+    position: sticky; /* Ahora sigue visible al hacer scroll */
+    top: 10px;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* 🔍 Estilos para el input del buscador */
+#search-box {
+    width: 30%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Burbank', Arial, sans-serif;
+    border: 3px solid #ffd700;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.0);
+    color: white;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, .5) !important;
+}
+
+/* 🔍 Cambiar borde cuando escribes */
+#search-box:focus {
+    border-color: yellow;
+}
+
+.pases-section-title {
+    font-family: 'Burbank', Arial, sans-serif;
+    font-size: 48px; /* 🔥 Cambia este valor para modificar el tamaño */
+    color: white; /* 🔥 Cambia este valor para modificar el color */
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, .5) !important;
+}
+
+
+.pases-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pases-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pases-item {
+    position: relative;
+    width: 300px;
+    height: 280px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: inset 0 0 150px -50px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        background: rgb(218, 178, 2);
+}
+
+/* Imágenes */
+.pases-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Información del producto */
+.pases-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.pases-price {
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Botones de compra */
+.pases-buy-icons {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Iconos de compra */
+.pases-buy-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease;
+}
+
+.pases-buy-icon:hover {
+    transform: scale(1.2);
+}
+
+
+/* 🔥 Estilos para la sección "PAVOS 2" */
+.pavos2-section-title {
+    font-family: 'Burbank', Arial, sans-serif;
+    font-size: 48px;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.pavos2-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: -10px;
+}
+
+/* 🔥 Estilos para los productos de "PAVOS 2" */
+.pavos2-item {
+    position: relative;
+    width: 320px;
+    height: 300px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: inset 0 0 150px -50px black;
+}
+
+/* 🔥 Imágenes */
+.pavos2-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 🔥 Capa de información */
+.pavos2-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+/* 🔥 Nombre del producto */
+.pavos2-title {
+    font-size: 22px;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* 🔥 Precio */
+.pavos2-price {
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* 🔥 Ícono */
+.pavos2-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* 🔥 Íconos de compra */
+.pavos2-buy-icon {
+    width: 30px;
+    height: 34px;
+    transition: transform 0.2s ease;
+}
+
+.pavos2-buy-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Para tabletas y pantallas medianas */
+@media (max-width: 1024px) {
+    .shop-container, .packs-container, .pavos-container, .pases-container, .pavos2-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centrar objetos horizontalmente */
+        gap: 15px; /* Espacio entre los objetos */
+    }
+
+    .item, .packs-item, .pavos-item, .pases-item, .pavos2-item {
+        width: calc(50% - 15px); /* 🔥 2 productos por fila */
+        height: auto;
+    }
+}
+
+/* Para celulares (pantallas pequeñas) */
+@media (max-width: 768px) {
+    .shop-container, .packs-container, .pavos-container, .pases-container, .pavos2-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centrar objetos */
+        gap: 10px; /* Espaciado uniforme */
+    }
+
+    .item, .packs-item, .pavos-item, .pases-item, .pavos2-item {
+        width: 100%; /* 🔥 1 producto por fila en móviles */
+        max-width: 350px; /* 🔥 Tamaño máximo para que no sean muy grandes */
+        height: auto;
+    }
+}
+
+/* Ajustes para asegurar que los títulos de cada categoría también se vean centrados */
+.packs-title, .pavos-section-title, .pases-section-title, .pavos2-section-title, .category-title {
+    text-align: center;
+    width: 100%;
+    font-size: 48px;
+
+}
+
