@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 let rarityColor = getRarityColor(rarity);
                 let vBucks = item.finalPrice;
-                let soles = (vBucks / 100 * 1.50).toFixed(2);
+                let soles = (vBucks / 100 * 1.80).toFixed(2);
                 let timeLeft = getTimeLeft(item.outDate);
                 let category = item.layout?.name || "Otros";
 
