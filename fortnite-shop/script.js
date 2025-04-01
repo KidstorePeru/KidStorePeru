@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 itemsByCategory[category].push(`
                     <div class="item" style="background-color: ${rarityColor};">
                         <div class="buy-icons">
-                            <a href="https://wa.me/51917932301?text=${encodeURIComponent('¡Hola!\nEstoy interesado en comprar ' + itemName + '.\n\nCosto: ' + vBucks + ' pavos\nPrecio: S/ ' + soles + ' soles.\n\n¿Está disponible? ¿Cómo podemos coordinar?')}" target="_blank">
+                            <a href="https://wa.me/51936281863?text=${encodeURIComponent('¡Hola!\nEstoy interesado en comprar ' + itemName + '.\n\nCosto: ' + vBucks + ' pavos\nPrecio: S/ ' + soles + ' soles.\n\n¿Está disponible? ¿Cómo podemos coordinar?')}" target="_blank">
                                 <img src="assets/whatsapp.png" alt="WhatsApp" class="buy-icon">
                             </a>
                             <a href="https://www.facebook.com/messages/t/564582056931570" target="_blank">
