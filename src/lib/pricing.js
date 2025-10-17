@@ -1,4 +1,4 @@
-export const PRICE_PER_100 = { PEN: 1.5, USD: 0.48, EUR: 0.41 };
+export const PRICE_PER_100 = { PEN: 1.5, USD: 0.47, EUR: 0.41 };
 
 export function vbuckToCurrency(vbucks, currency = "PEN", digits = 2) {
   const per100 = PRICE_PER_100[currency];
