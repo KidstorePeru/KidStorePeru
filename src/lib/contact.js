@@ -3,7 +3,7 @@ import { priceByCurrency } from "./pricing";
 // Números y enlaces oficiales
 const CONTACT = {
   whatsapp: "51983454837", // E.164 sin '+'
-  telegram: "kidstore.peru",
+  telegram: "kidstoreperu",
   facebook: "https://www.facebook.com/kidstore.gg",
   discord: "https://discord.gg/kidstore"
 };
