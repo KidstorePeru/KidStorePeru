@@ -11,7 +11,7 @@ export const specialBundles = [
     id: "SkateParkRoyaltyPack",
     nameEs: "Pack Amo del Skatepark",
     nameEn: "Skate Park Royalty Pack",
-    price: { 45.90, USD: 14.20, EUR: 12.10 },
+    price: { PEN: 45.90, USD: 14.20, EUR: 12.10 },
     image: "/images/10-icon.png",
     expiresAt: "2025-11-03T19:00:00Z", // Configurar tiempo en la tienda
   },
