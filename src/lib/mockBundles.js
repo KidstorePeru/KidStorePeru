@@ -8,11 +8,19 @@ export const specialBundles = [
     expiresAt: "2025-11-03T19:00:00Z", // Configurar tiempo en la tienda
   },
   {
-    id: "SkateParkRoyaltyPack",
-    nameEs: "Pack Amo del Skatepark",
-    nameEn: "Skate Park Royalty Pack",
-    price: { PEN: 45.90, USD: 14.20, EUR: 12.10 },
-    image: "/images/10-icon.png",
+    id: "FullClipPack",
+    nameEs: "Pack Clip al Completo",
+    nameEn: "FullClipPack",
+    price: { PEN: 41.90, USD: 13.20, EUR: 11.30 },
+    image: "/images/12-icon.png",
+    expiresAt: "2025-11-03T19:00:00Z", // Configurar tiempo en la tienda
+  },
+  {
+    id: "PolarLegendsPack",
+    nameEs: "Pack Leyendas Polares",
+    nameEn: "Polar Legends Pack",
+    price: { PEN: 53.90, USD: 17.20, EUR: 14.30 },
+    image: "/images/14-icon.png",
     expiresAt: "2025-11-03T19:00:00Z", // Configurar tiempo en la tienda
   },
   {
@@ -24,9 +32,25 @@ export const specialBundles = [
     expiresAt: "2025-11-03T19:00:00Z", // Configurar tiempo en la tienda
   },
   {
-    id: "PixelleStarterPack",
-    nameEs: "Pack de inicio de Pixelia",
-    nameEn: "Pixelle Starter Pack",
+    id: "AgencyRenegadesPack",
+    nameEs: "Pack Renegados de la Agencia",
+    nameEn: "Agency Renegades Pack",
+    price: { PEN: 47.90, USD: 15.20, EUR: 12.90 },
+    image: "/images/15-icon.png",
+    expiresAt: "2025-11-03T19:00:00Z", // Configurar tiempo en la tienda
+  },
+  {
+    id: "FrozenLegendsPack",
+    nameEs: "Pack Leyendas Congeladas",
+    nameEn: "Frozen Legends Pack",
+    price: { PEN: 37.90, USD: 12.10, EUR: 10.10 },
+    image: "/images/13-icon.png",
+    expiresAt: "2025-11-03T19:00:00Z", // Configurar tiempo en la tienda
+  },
+  {
+    id: "OperationBriteStarterPack",
+    nameEs: "Pack de inicio Operación Brillante",
+    nameEn: "Operation Brite Starter Pack",
     price: { PEN: 13.90, USD: 4.30, EUR: 3.70 },
     image: "/images/7-icon.png",
     expiresAt: "2025-11-03T19:00:00Z", // Configurar tiempo en la tienda
