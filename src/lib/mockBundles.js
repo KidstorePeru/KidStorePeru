@@ -52,7 +52,7 @@ export const specialBundles = [
     nameEs: "Pack de inicio Operación Brillante",
     nameEn: "Operation Brite Starter Pack",
     price: { PEN: 13.90, USD: 4.30, EUR: 3.70 },
-    image: "/images/7-icon.png",
+    image: "/images/16-icon.png",
     expiresAt: "2025-11-03T19:00:00Z", // Configurar tiempo en la tienda
   },
   {
