@@ -19,7 +19,7 @@ export const specialBundles = [
     id: "PolarLegendsPack",
     nameEs: "Pack Leyendas Polares",
     nameEn: "Polar Legends Pack",
-    price: { PEN: 53.90, USD: 17.20, EUR: 14.30 },
+    price: { PEN: 26.90, USD: 8.90, EUR: 7.30 },
     image: "/images/14-icon.png",
     expiresAt: "2025-11-03T19:00:00Z", // Configurar tiempo en la tienda
   },
@@ -35,7 +35,7 @@ export const specialBundles = [
     id: "AgencyRenegadesPack",
     nameEs: "Pack Renegados de la Agencia",
     nameEn: "Agency Renegades Pack",
-    price: { PEN: 47.90, USD: 15.20, EUR: 12.90 },
+    price: { PEN: 24.90, USD: 7.90, EUR: 6.90 },
     image: "/images/15-icon.png",
     expiresAt: "2025-11-03T19:00:00Z", // Configurar tiempo en la tienda
   },
@@ -43,7 +43,7 @@ export const specialBundles = [
     id: "FrozenLegendsPack",
     nameEs: "Pack Leyendas Congeladas",
     nameEn: "Frozen Legends Pack",
-    price: { PEN: 37.90, USD: 12.10, EUR: 10.10 },
+    price: { PEN: 19.90, USD: 6.50, EUR: 5.50 },
     image: "/images/13-icon.png",
     expiresAt: "2025-11-03T19:00:00Z", // Configurar tiempo en la tienda
   },
@@ -59,7 +59,7 @@ export const specialBundles = [
   id: "FortniteCrew",
   nameEs: "Club de Fortnite",
   nameEn: "Fortnite Crew",
-  price: { PEN: 22.00, USD: 6.80, EUR: 5.80 },
+  price: { PEN: 25.00, USD: 7.90, EUR: 6.80 },
   image: "/images/8-icon.png", // La imagen que quieras usar para el club
   expiresAt: "2025-10-31T19:00:00Z", 
 }
