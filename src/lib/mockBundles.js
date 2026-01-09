@@ -1,9 +1,9 @@
 export const specialBundles = [
   {
-    id: "GildedElitesPack",
-    nameEs: "Pack de Élite dorada",
-    nameEn: "Gilded Elites Pack",
-    price: { PEN: 42.90, USD: 13.30, EUR: 11.30 },
+    id: "GuardiansoftheGalaxyPack",
+    nameEs: "Pack Guardianes de la Galaxia",
+    nameEn: "Guardians of the Galaxy Pack",
+    price: { PEN: 58.99, USD: 18.99, EUR: 15.99 },
     image: "/images/3-icon.png",
     expiresAt: "2025-11-03T19:00:00Z", // Configurar tiempo en la tienda
   },
