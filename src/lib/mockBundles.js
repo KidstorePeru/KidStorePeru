@@ -4,14 +4,14 @@ export const specialBundles = [
     nameEs: "Pack Guardianes de la Galaxia",
     nameEn: "Guardians of the Galaxy Pack",
     price: { PEN: 58.99, USD: 18.99, EUR: 15.99 },
-    image: "/images/3-icon.png",
+    image: "/images/17-icon.png",
     expiresAt: "2025-11-03T19:00:00Z", // Configurar tiempo en la tienda
   },
   {
     id: "FullClipPack",
     nameEs: "Pack Clip al Completo",
     nameEn: "FullClipPack",
-    price: { PEN: 41.90, USD: 13.20, EUR: 11.30 },
+    price: { PEN: 41.99, USD: 12.99, EUR: 10.99 },
     image: "/images/12-icon.png",
     expiresAt: "2025-11-03T19:00:00Z", // Configurar tiempo en la tienda
   },
@@ -19,16 +19,16 @@ export const specialBundles = [
     id: "PolarLegendsPack",
     nameEs: "Pack Leyendas Polares",
     nameEn: "Polar Legends Pack",
-    price: { PEN: 26.90, USD: 8.90, EUR: 7.30 },
+    price: { PEN: 26.90, USD: 8.99, EUR: 7.30 },
     image: "/images/14-icon.png",
     expiresAt: "2025-11-03T19:00:00Z", // Configurar tiempo en la tienda
   },
   {
-    id: "TheDiamondDivaPack",
-    nameEs: "Pack Diva de Diamantes",
-    nameEn: "The Diamond Diva Pack",
-    price: { PEN: 13.00, USD: 3.99, EUR: 3.42 },
-    image: "/images/11-icon.png",
+    id: "ShakaSurfin'Pack",
+    nameEs: "Pack Surfeo Shaka",
+    nameEn: "Shaka Surfin' Pack",
+    price: { PEN: 11.50, USD: 3.99, EUR: 3.40 },
+    image: "/images/18-icon.png",
     expiresAt: "2025-11-03T19:00:00Z", // Configurar tiempo en la tienda
   },
   {
@@ -51,7 +51,7 @@ export const specialBundles = [
     id: "OperationBriteStarterPack",
     nameEs: "Pack de inicio Operación Brillante",
     nameEn: "Operation Brite Starter Pack",
-    price: { PEN: 13.90, USD: 4.30, EUR: 3.70 },
+    price: { PEN: 11.90, USD: 4.30, EUR: 3.70 },
     image: "/images/16-icon.png",
     expiresAt: "2025-11-03T19:00:00Z", // Configurar tiempo en la tienda
   },
@@ -59,7 +59,7 @@ export const specialBundles = [
   id: "FortniteCrew",
   nameEs: "Club de Fortnite",
   nameEn: "Fortnite Crew",
-  price: { PEN: 25.00, USD: 7.90, EUR: 6.80 },
+  price: { PEN: 24.00, USD: 7.90, EUR: 6.80 },
   image: "/images/8-icon.png", // La imagen que quieras usar para el club
   expiresAt: "2025-10-31T19:00:00Z", 
 }
