@@ -59,7 +59,7 @@ export const specialBundles = [
   id: "FortniteCrew",
   nameEs: "Club de Fortnite",
   nameEn: "Fortnite Crew",
-  price: { PEN: 24.00, USD: 7.90, EUR: 6.80 },
+  price: { PEN: 19.90, USD: 6.30, EUR: 5.50 },
   image: "/images/8-icon.png", // La imagen que quieras usar para el club
   expiresAt: "2025-10-31T19:00:00Z", 
 }
