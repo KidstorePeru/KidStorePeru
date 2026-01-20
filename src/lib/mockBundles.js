@@ -17,7 +17,7 @@ export const specialBundles = [
   },
   {
     id: "BassassinQuestPack",
-    nameEs: "Pack de Misiones de Siluro Asueldo",
+    nameEs: "Pack de Misiones de Siluro A Sueldo",
     nameEn: "Bassassin Quest Pack",
     price: { PEN: 20.90, USD: 6.99, EUR: 5.99 },
     image: "/images/19-icon.png",
