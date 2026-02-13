@@ -27,7 +27,7 @@ export const specialBundles = [
     id: "DeepFreezeBundle",
     nameEs: "Lote Congelamiento Profundo",
     nameEn: "Deep Freeze Bundle",
-    price: { PEN: 33,90, USD: 10.99, EUR: 8.99 },
+    price: { PEN: 33.90, USD: 10.99, EUR: 8.99 },
     image: "/images/21-icon.png",
     expiresAt: "2025-11-03T19:00:00Z", // Configurar tiempo en la tienda
   },
