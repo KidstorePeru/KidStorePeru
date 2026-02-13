@@ -34,7 +34,7 @@ export const specialBundles = [
   {
     id: "FullClipPack",
     nameEs: "Pack Clip al Completo",
-    nameEn: "FullClipPack",
+    nameEn: "Full Clip Pack",
     price: { PEN: 41.99, USD: 12.99, EUR: 10.99 },
     image: "/images/12-icon.png",
     expiresAt: "2025-11-03T19:00:00Z", // Configurar tiempo en la tienda
